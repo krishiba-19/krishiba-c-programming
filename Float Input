@@ -1,0 +1,12 @@
+Question-Write a program to get a float value from the user and display it.
+Coding-
+#include<iostream>
+using namespace std;
+
+int main()
+{
+   float a;
+   cin>>a;
+   cout<<a;
+    return 0;
+}
