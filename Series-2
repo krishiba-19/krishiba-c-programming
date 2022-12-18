@@ -1,0 +1,15 @@
+Question-Write a  program to generate the following series – 0, 2, 6, 12, 20…..
+Coding-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,a=0,b;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        b=a*i;
+        a++;
+        cout<<b<<" ";
+    }
+}
