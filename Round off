@@ -1,0 +1,19 @@
+Question-Write a C program to get a float value from the user and display it in the below-mentioned format.
+54
+55.0
+54.0
+coding:
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    float n;
+    cin>>n;
+    cout<<floor(n)<<endl;
+    cout<<ceil(n)<<endl;
+    cout<<floor(n)<<endl;
+    
+    return 0;
+    
+}
