@@ -1,0 +1,14 @@
+Question-y name is Binfon and I am tribal. I couldn't understand how you measure days, weeks, months and year. Please make me to understand about the days, weeks, months and year. Dear Friend, Make Binfon to understand what is meant by days,week, months and year. Teach him about the conversion of days in to years, weeks and days using a program
+Coding-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,y,w,d;
+    cin>>n;
+    y=(n/365);
+    w=(n%365)/7;
+    d=(n%365)%7;
+    cout<<y<<endl<<w<<endl<<d<<endl;
+    
+}
