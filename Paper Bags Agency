@@ -1,0 +1,14 @@
+Question-Each Sunday, a Paper bags agency sells w copies of a special edition Paper bags for Rs.x per copy. The cost to the agency of each Paper bag is Rs.y . The agency pays a fixed cost for storage, delivery and so on of Rs.100 per Sunday. The Paper bag agency wants to calculate the profit which it obtains only on Sundays. Can you please help them out by writing a program to compute the profit given w, x and y. 
+Coding-
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+    int w,x,y,d;
+    cin>>w>>x>>y;
+    d=((w*x)-(w*y))-100;
+    cout<<d;
+    return 0;
+}
