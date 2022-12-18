@@ -1,0 +1,14 @@
+Question-Write a program to generate the following series – 6, 9, 14, 21, 30….
+Coding-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,a;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        a=(i*i)+5;
+        cout<<a<<" ";
+    }
+}
