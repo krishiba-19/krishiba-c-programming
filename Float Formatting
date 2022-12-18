@@ -1,0 +1,19 @@
+Question-Write a program to get a float value from the user and display it in the below-mentioned format-
+23.115000
+23.115
+23.11
+23.1
+Coding:
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+    float a;
+    cin >> a ;
+    printf("%f",a);
+    printf("\n%0.3f",a);
+    printf("\n%0.2f",a);
+    printf("\n%0.1f",a);
+return 0;    
+}
