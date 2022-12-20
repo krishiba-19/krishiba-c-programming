@@ -1,0 +1,27 @@
+Question-
+The environmental eco club  have discovered a new Amoeba that grows in the order of a Fibonacci series every month. They are exhibiting their amoeba in a national conference. They want to know the size of the amoeba at a particular time instant. If a particular month’s index is given can you write a  program that displays the amoeba’s size……???
+Coding-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int m,n3;
+    int n1=0;
+    int n2=1;
+    cout<<"Enter the number of Months :"<<endl;
+    cin>>m;
+    if(m<13)
+   {
+       for(int i=1;i<=m-2;i++)
+       {
+           n3=n2+n1;
+           n1=n2;
+           n2=n3;
+       }
+       cout<<" The amoeba size is "<<n3;
+   }
+   else
+   {
+       cout<<"Invalid Input";
+   }
+}
