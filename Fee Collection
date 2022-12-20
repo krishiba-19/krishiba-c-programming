@@ -1,0 +1,70 @@
+Questuion-
+Write a program to determine the fee amount to be collected from a student. The input to the program are the type of the student, tuition fee, bus fee, hostel fee.
+coding-
+#include<iostream>
+#include<iomanip>
+#include<math.h>
+#include<string>
+using namespace std;
+int main()
+{
+    float p;
+    float q;
+    float r;
+    float u;
+    string s;
+    string v("MSDS");
+    string w("MSH");
+    string x("MGSDS");
+    string y("MGSH");
+    float t;
+    float h;
+    float b;
+    cout<<"Enter the student type"<<endl;
+    cin>>s;
+    if(s==v)
+    {
+         cout<<"Enter tuition fee"<<endl;
+         cin>>t;
+        cout<<"Enter bus fee"<<endl;
+         cin>>b;
+        p=(t+b);
+    cout<<"The fees to be paid by the student is Rs. ";
+    cout<<fixed<<setprecision(2)<<p;
+    }
+    else if(s==w)
+    {
+        cout<<"Enter tuition fee"<<endl;
+         cin>>t;
+        cout<<"Enter hostel fee"<<endl;
+        cin>>h;
+       q=(t+h); 
+    cout<<" The fees to be paid by the student is Rs. ";
+    cout<<fixed<<setprecision(2)<<q;
+    }
+    else if(s==x)
+    {
+         cout<<"Enter tuition fee"<<endl;
+         cin>>t;
+         cout<<"Enter bus fee"<<endl;
+         cin>>b;
+        r=((150*t)/100)+b;
+    cout<<" The fees to be paid by the student is Rs. ";
+    cout<<fixed<<setprecision(2)<<r;
+    }
+    else if(s==y)
+    {
+    cout<<"Enter tuition fee"<<endl;
+         cin>>t;
+         cout<<"Enter hostel fee"<<endl;
+        cin>>h;
+        u=((150*t)/100)+h;
+    cout<< "The fees to be paid by the student is Rs. ";
+    cout<<fixed<<setprecision(2)<<u;
+    }
+    else
+    {
+        cout<<"invalid input";
+    }
+}   
+    
