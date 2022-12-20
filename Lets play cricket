@@ -1,0 +1,20 @@
+Question-A program to calculate the batting average.
+coding-
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int r,o,i,m;
+    float avg;
+    cout<<"enter the number of matches played"<<endl;
+    cin>>m;
+    cout<<"enter the number innings batted"<<endl;
+    cin>>i;
+    cout<<"enter number of times notout"<<endl;
+    cin>>o;
+    cout<<"enter runs scored"<<endl;
+    cin>>r;
+    avg=(r/(i-o));
+    cout<<"batting average="<<fixed<<setprecision(1)<<avg;    
+}
