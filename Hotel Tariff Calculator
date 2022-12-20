@@ -1,0 +1,30 @@
+Question-Write a  program to calculate the hotel tariff. The room rent is 20% high during peak seasons [April-June, November-December] .
+Coding-
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a,b;
+    int m;
+    cin>>m;
+    float r;
+    cin>>r;
+    int d;
+    cin>>d;
+    if(m==1 ||m==2||m==3||m==5||m==7||m==8||m==9||m==10)
+    {
+       a=r*d;
+       cout<<"Hotel Tariff: Rs."<<fixed<<setprecision(2)<<a;
+    }
+    else if(m==4||m==6||m==11||m==12)
+    {
+      a=(0.2*r);
+      b=(r+a)*d;
+        cout<<"Hotel Tariff: Rs."<<fixed<<setprecision(2)<<b;
+    }
+    else
+    {
+        cout<<"Invalid Input ";
+    }
+}
