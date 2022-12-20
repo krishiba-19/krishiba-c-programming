@@ -1,0 +1,22 @@
+Question-The program should then determine whether the month times the day
+is equal to the year.  If so, it should display a message saying the date is magic.
+Otherwise it should display a message saying the date is not magic.
+coding-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int y,m,d,a;
+    cin>>y>>d>>m;
+    a=m*d;
+    if(a==y)
+    {
+        cout<<"its magic year "<<y;
+    }
+    else
+    {
+        cout<<"its not magic year ";
+    }
+}
+    
+    
