@@ -1,0 +1,20 @@
+Question-Write a program to generate the following series 3  2  11  14  27
+coding-
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,e;
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        if(i%2==0)
+        {
+           e=((i*i)-2);
+        }
+        else
+        {
+            e=((i*i)+2);
+        }cout<<e<<endl;
+    }
+}
